@@ -87,7 +87,7 @@ void _que(){
 					break;
 			case 5: cout<<"\n Front: "<<a.front();
 					break;
-			case 6: menuStack();
+			case 6: menuQ();
 					break;
 			case 0: break;
 			default: cout<<"\n Wrong Choice!";
