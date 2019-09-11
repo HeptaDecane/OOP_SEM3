@@ -17,7 +17,7 @@ public:
 	void insert(vector<Item>&);
 	int search(vector<Item>);
 	void menu();
-	friend bool compare(Item &i1,Item &i2);
+	friend bool compare(const Item &i1,const Item &i2);
 };
 
 // function for aiding p=find(list.begin(),list.end(),i) 
@@ -26,7 +26,7 @@ bool Item::operator ==(const Item &i){
 }
 
 // function aiding sort(list.begin(),list.end(),compare)
-bool compare(Item &i1,Item &i2){
+bool compare(const Item &i1,const Item &i2){
 	return (i1.cost<i2.cost);
 }
 
@@ -112,7 +112,7 @@ int main(){
 					else
 						cout<<"\nItem Deleted!";
 					break;
-			case 6: inventory.menu();
+			case 99: inventory.menu();
 					break;
 			case 0: cout<<"\nEND...\n";
 					break;
