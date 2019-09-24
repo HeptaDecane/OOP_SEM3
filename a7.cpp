@@ -1,29 +1,14 @@
-/*
- * Assignment7.cpp
- *
- *  Created on: Aug 21, 2019
- *      Author: SE
- */
+//============================================================================
+// Name        : Assignment.cpp
+// Author      : Near
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
 #include<bits/stdc++.h>
 using namespace std;
-/*
-int main(){
-	int a,b,c;
-	cin>>a>>b;
-	try{
-		if(!b){
-			throw b;
-		}
-		else{
-			cout<<a/b;
-		}
-	}
-	catch(int i){
-		cout<<"divisor can't be zero";
-	}
-	return 0;
-}
-*/
+
 class Data{
 	int age;
 	int income;
@@ -67,7 +52,6 @@ int main(){
 	Data obj;
 	try{
 		obj.getData();
-
 	}
 	catch(Data::Error &){
 		cout<<"\n!! Criteria didn't Match !!"<<endl;
